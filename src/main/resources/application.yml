@@ -1,0 +1,23 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task-management
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  jwt:
+    secret-key: "09d62fc50a9d8c09c3c3a82a3d5762cdfd85de199cb864b5378a77ff2c230159"
+    expiration: 360000000000
+
+#logging:
+#  level:
+#    com.eoeqs.task_management_system.security.jwt: debug
+#
